@@ -13,7 +13,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
-// testes de integração (camada repository)
+/****************************** testes de integração (camada repository) *******************************/
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
 @DataJpaTest
@@ -40,7 +40,7 @@ public class BookRepositoryTest {
         assertThat(exists).isTrue();
     }
 
-    private static Book createNewBook(String isbn) {
+    public static Book createNewBook(String isbn) {
         return Book.builder().title("Aventuras").author("Fulano").isbn(isbn).build();
     }
 

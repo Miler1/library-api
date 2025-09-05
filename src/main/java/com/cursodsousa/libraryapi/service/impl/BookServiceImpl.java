@@ -9,7 +9,6 @@ import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
-import java.awt.print.Pageable;
 import java.util.Optional;
 
 @Service
@@ -62,8 +61,8 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Optional<Book> getBookByIsbn(String number) {
-        return Optional.empty();
+    public Optional<Book> getBookByIsbn(String isbn) {
+        return repository.findByIsbn(isbn);
     }
 
 }
