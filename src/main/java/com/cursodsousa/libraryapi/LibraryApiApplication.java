@@ -16,8 +16,8 @@ import java.util.List;
 @EnableScheduling
 public class LibraryApiApplication {
 
-	@Autowired
-	private EmailService emailService;
+	//@Autowired
+	//private EmailService emailService;
 
 	@Bean
 	public ModelMapper modelMapper() {
@@ -28,7 +28,7 @@ public class LibraryApiApplication {
 	public CommandLineRunner runner() {
 		return args -> {
 			List<String> emails = Arrays.asList("949538bb2d-84380f+user1@inbox.mailtrap.io");
-			emailService.sendMails("Testando serviço de emails.", emails);
+			//emailService.sendMails("Testando serviço de emails.", emails);
 			System.out.println("EMAILS ENVIADOS");
 		};
 	}
