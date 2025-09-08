@@ -1,7 +1,6 @@
 package com.cursodsousa.libraryapi.service;
 
 import com.cursodsousa.libraryapi.api.dto.LoanFilterDTO;
-import com.cursodsousa.libraryapi.api.resource.BookController;
 import com.cursodsousa.libraryapi.model.entity.Book;
 import com.cursodsousa.libraryapi.model.entity.Loan;
 import org.springframework.data.domain.Page;
