@@ -37,6 +37,6 @@ jobs:
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4 # Use the latest stable version
       with:
-        token: e37daee5-15f9-4d38-8c2a-58ba4f8dee05 # Required for private repositories
+        token: ${{ secrets.CODECOV_TOKEN }} # Required for private repositories
         # Optional: Specify path to coverage report if not in default location
         
