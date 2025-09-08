@@ -1,4 +1,9 @@
 language: java
 jdk:
   - openjdk17
-dist: jammy
+
+install:
+  - mvn install -DskipTests=true -B -V
+
+script:
+  - mvn test
